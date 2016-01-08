@@ -63,7 +63,7 @@ Hard-coding each individual object that we want would be fairly inefficient. Wha
 
 ```js
 var makePerson = function(name, age){
-  newPerson = {};
+  var newPerson = {};
   newPerson.name = name;
   newPerson.age = age;
   newPerson.introduce = function(){
