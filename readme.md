@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-* compare and contrast OOP in Ruby and Javascript
+* compare and contrast objects in Ruby and Javascript
 * learn to use constructor functions to create objects
 * understand how to attach attributes and methods to an object via `prototype` property
 
@@ -76,7 +76,7 @@ var ash = makePerson("Ash", "10");
 ash.introduce(); //"Hi, I'm Ash, and I'm 10 years old!"
 ```
 
-Seems fairly reasonable so far, but there's actually a better way to do this...
+Now, we could do this, but it turns out JS already comes with some tools...
 
 ## Constructor Functions - I DO
 
@@ -142,10 +142,11 @@ In Javascript, each object has a `prototype` property that references another ob
 
 In the world of Pokemon, people challenge each other to Pokemon battles all the time. Rewrite our Person constructor using the `prototype` property so that the Person can also `challenge`, `win`, and `lose`, each with its' own console.log statement.
 
-BONUS: Add a `money` property, and write the logic for the person to win or lose money in each corresponding method.
+BONUS: Add a `money` attribute for each Person, and write the logic for the person to win or lose money in each corresponding method. Be careful of how you assign the `money` attribute!
 
 ## Further Discussion
 
-* Avoid assigning static properties to the prototype!
+* Dangers and pitfalls - rewriting prototypes
 * The `__proto__` property
-* Prototypal inheritance in JS
+* Prototypal inheritance (Trainer that inherits from a Person)
+* Emulating public, private and privileged methods
