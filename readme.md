@@ -13,7 +13,7 @@
 
 An object is a self-contained entity that consists of both data and procedures to manipulate that data. In a nutshell, object-oriented programming lets us model data as nouns, and their associated behaviors as verbs. It's an intuitive way for programmers to structure code.
 
-## Review: Objects in Ruby and JS
+### Compare & Contrast: Objects in Ruby and JS
 
 Let's recall in Ruby how we made objects at a high level.
 
