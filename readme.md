@@ -1,12 +1,12 @@
 # Object Oriented Javascript: Constructors and Prototypes
 
-## Learning Objectives
+## Learning Objectives (00:30/00:30)
 
 * compare and contrast objects in Ruby and Javascript
 * learn to use constructor functions to create objects
 * understand how to attach attributes and methods to an object via `prototype` property
 
-## Framing: Object Oriented Programming Review
+## Framing: Object Oriented Programming Review (01:00/01:30)
 
 * What is an object?
 * Why do we use the OOP paradigm? What benefits does it provide us?
@@ -138,6 +138,16 @@ What's actually going on here? There are actually a couple more things that we d
 
 In Javascript, each object has a `prototype` property that references another object - and along with it come associated methods and behaviors. When we created the `pikachu` object by invoking `new Pokemon`, we also assigned it all the properties and methods that were found on `Person.prototype`. Whenever we tell Pikachu to attack, the object looks for the property on the `pikachu` object - and if it can't find it, it'll go to the prototype to see if it's there instead.
 
+This is a dynamic way to add new methods to 'classes' of objects in Javascript at runtime - something that's a bit more complicated in other languages.
+
+```js
+pikachu.introduce(); // returns an error
+Pokemon.prototype.introduce = function(){
+  console.log(this.name + "!")
+}
+pikachu.introduce(); // returns "Pikachu!"
+```
+
 ### Refactor our Person Constructor via the Prototype Property - YOU DO
 
 In the world of Pokemon, people challenge each other to Pokemon battles all the time. Rewrite our Person constructor using the `prototype` property so that the Person can also `challenge`, `win`, and `lose`, each with its' own console.log statement.
@@ -146,7 +156,7 @@ BONUS: Add a `money` attribute for each Person, and write the logic for the pers
 
 ## Further Discussion
 
-* Dangers and pitfalls - rewriting prototypes
+* Dangers and pitfalls in overwriting prototypes
 * The `__proto__` property
 * Prototypal inheritance (Trainer that inherits from a Person)
 * Emulating public, private and privileged methods
