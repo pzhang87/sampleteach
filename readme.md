@@ -2,15 +2,9 @@
 
 ## Learning Objectives
 
-<<<<<<< HEAD
 * compare and contrast objects in Ruby and Javascript
 * learn to use constructor functions to create objects
 * understand how to attach attributes and methods to an object via `prototype` property
-=======
-* compare and contrast OOP in Ruby and Javascript
-* learn to use constructor functions to create objects in JS
-* understand prototypes and how to attach methods to an object via the `prototype` property
->>>>>>> 8464a8c08091cda9c413465c43536b35153d4009
 
 ## Framing: Object Oriented Programming Review
 
