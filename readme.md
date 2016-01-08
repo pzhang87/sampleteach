@@ -136,7 +136,7 @@ pikachu.attack();
 
 What's actually going on here? There are actually a couple more things that we didn't mention when we talked about invoking the constructor function.
 
-In Javascript, each object has a `prototype` property that references another object - and along with it come associated methods and behaviors. When we created the `pikachu` object by invoking `new Pokemon`, we also assigned it all the properties and methods that were found on `Person.prototype`. Whenever we tell Pikachu to attack, the object looks for the property on the `pikachu` object - and if it can't find it, it'll go to the prototype to see if it's there instead.
+In Javascript, each object has a `prototype` property that references another object - and along with it come associated methods and attributes. When we created the `pikachu` object by invoking `new Pokemon`, we also assigned it all the properties and methods that were found on `Person.prototype`. Whenever we tell Pikachu to attack, the object looks for the property on the `pikachu` object - and if it can't find it, it'll go to the prototype to see if it's there instead.
 
 This is a dynamic way to add new methods to 'classes' of objects in Javascript at runtime - something that's a bit more complicated in other languages.
 
