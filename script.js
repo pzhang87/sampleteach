@@ -1,1 +1,1 @@
-console.log("Are you a boy or a girl?")
+console.log("Hello there! Welcome to the world of Pokemon. Are you a boy or a girl?")
