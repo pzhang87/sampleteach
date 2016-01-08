@@ -76,11 +76,7 @@ var ash = makePerson("Ash", "10");
 ash.introduce(); //"Hi, I'm Ash, and I'm 10 years old!"
 ```
 
-<<<<<<< HEAD
-Now, we could do this, but it turns out JS already comes with some tools...
-=======
-Seems fairly reasonable so far, but there's actually a better way to do this...
->>>>>>> 8464a8c08091cda9c413465c43536b35153d4009
+It turns out JS already comes with some tools for us to do this...
 
 ## Constructor Functions - I DO
 
