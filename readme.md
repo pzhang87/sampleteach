@@ -2,9 +2,15 @@
 
 ## Learning Objectives
 
+<<<<<<< HEAD
 * compare and contrast objects in Ruby and Javascript
 * learn to use constructor functions to create objects
 * understand how to attach attributes and methods to an object via `prototype` property
+=======
+* compare and contrast OOP in Ruby and Javascript
+* learn to use constructor functions to create objects in JS
+* understand prototypes and how to attach methods to an object via the `prototype` property
+>>>>>>> 8464a8c08091cda9c413465c43536b35153d4009
 
 ## Framing: Object Oriented Programming Review
 
@@ -76,7 +82,11 @@ var ash = makePerson("Ash", "10");
 ash.introduce(); //"Hi, I'm Ash, and I'm 10 years old!"
 ```
 
+<<<<<<< HEAD
 Now, we could do this, but it turns out JS already comes with some tools...
+=======
+Seems fairly reasonable so far, but there's actually a better way to do this...
+>>>>>>> 8464a8c08091cda9c413465c43536b35153d4009
 
 ## Constructor Functions - I DO
 
