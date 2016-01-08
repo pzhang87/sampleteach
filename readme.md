@@ -101,7 +101,7 @@ A few things to note here:
 2. The words `this` and `new`. How does the constructor function know what `this` is? It's because in using the word `new`, JS knows to create a new empty object, set it as the target of `this`, and return the object once it's done assigning properties.
 3. I said this wasn't creating a class, but it sure awfully looks similar! That is the point of why this syntax exists, but under the hood, Javascript is doing something slightly different - which we'll get into a bit later.
 
-### Write a Constructor Function - WE DO
+### Write a Constructor Function - YOU DO/WE DO
 
 Let's write a constructor function for a Pokemon that takes two arguments `name` and `move`, and has a method `attack` that prints what move the Pokemon used to the console. Then, call it to create a new Pokemon. (If you don't know/can't remember anything about Pokemon, `Pikachu` knows to use `Thundershock` at Level 1.)
 
